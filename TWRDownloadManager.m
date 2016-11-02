@@ -11,10 +11,6 @@
 
 @interface TWRDownloadManager () <NSURLSessionDelegate, NSURLSessionDownloadDelegate>
 
-@property (strong, nonatomic) NSURLSession *session;
-@property (strong, nonatomic) NSURLSession *backgroundSession;
-@property (strong, nonatomic) NSMutableDictionary *downloads;
-
 @end
 
 @implementation TWRDownloadManager

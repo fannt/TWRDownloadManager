@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class TWRDownloadObject;
+
 @interface TWRDownloadManager : NSObject
+
+@property (strong, nonatomic) NSURLSession *session;
+@property (strong, nonatomic) NSURLSession *backgroundSession;
+@property (strong, nonatomic) NSMutableDictionary <NSString*,TWRDownloadObject*> *downloads;
 
 @property (nonatomic, strong) void(^backgroundTransferCompletionHandler)();
 
